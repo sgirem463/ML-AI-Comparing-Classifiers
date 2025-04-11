@@ -37,11 +37,12 @@ I then created SVM, DecisionTree and KNN model with default setting.
 
 The accuracy result for these classifiers is:
 
-        Model                Train Time      Train Accuracy  Test Accuracy
-0       LogisticRegression   0.4923          0.825738        0.830610
-1       SVM                  0.1498          0.830897        0.848667
-2       DecisionTree         0.0238          1.000000        0.783319
-3       KNN                  0.0087          0.847521        0.798796
+
+|        Model        |        Train Time   |   Train Accuracy | Test Accuracy |\
+| ------ | ------ | ------ | ------ | ------|\
+|0   | LogisticRegression |  0.4923    |      0.825738   |     0.830610 |\
+|1  |  SVM        |          0.1498    |      0.830897    |    0.848667 |\
+|3   |    KNN          |        0.0087     |     0.847521    |    0.798796 |
 
 ## Improving the models
 
