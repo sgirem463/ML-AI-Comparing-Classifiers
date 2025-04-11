@@ -47,7 +47,7 @@ KNN          |        0.0087     |     0.847521    |    0.798796
 
 ## Improving the models
 
-I tried tuning the hypoerparameters with grid searching. On toop of that I think we should use a different performance metric which focus more on recall and specificity, also with recall being given higher weigh than specificity. Each FalseNegative sample means we lose the opportunity to contact and convince the customer to participate in the campaign. Slightly lower specificity is okay as long as the resource put in to contact each False Positive customer isn't very high.
+I tried tuning the hypoerparameters with grid searching. On top of that decided to use a different performance metric which focus more on recall and specificity, also with recall being given higher weigh than specificity. Each FalseNegative sample means we lose the opportunity to contact and convince the customer to participate in the campaign. Slightly lower specificity is okay as long as the resource put in to contact each False Positive customer isn't very high.
 
 LogisticRegression is tuned by grid searching on parameter C/regularization, SVM is tuned by grid searching on gama, DecisionTree is tuned by grid searching on max-depth, KNN is tuned by grid searching on n_neighbors.
 
@@ -62,7 +62,7 @@ KNN-7        |       0.803095 | 0.665272 |  0.516234 | 0.906433
 
 
 ## Custom threshold for prediction
-I would use a custom threshold of 0.3 (instead of the default 0.5) to improve recall because each False Negative would likely cost us a campaign success
+I used a custom threshold of 0.3 (instead of the default 0.5) to improve recall because each False Negative would likely cost us a campaign success
 
 DecisionTree (mat-depth == 6) ends up to be the best model with this approach, with recall of 0.8344 and specificity of 0.8234, LogisticRegresion is not far behind
 
@@ -77,7 +77,7 @@ KNN-15        |      0.795357 | 0.598870 |  0.688312 | 0.833918
 ## Another thought, simply the model by removing some features
 
 Try removing features month, day_of_week, job, education and martial
-These categorical features end up with more than 30 features after OneHot encoding, removing them leave us with a much smaller table, here I also use a custom threshold of 0.3 to improve recall.
+These categorical features end up with more than 30 features after OneHot encoding, removing them leaves us with a much smaller table, here I also use a custom threshold of 0.3 to improve recall.
 
 
 model |  accuracy | precision | recall  |  specificity
