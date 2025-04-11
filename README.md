@@ -87,3 +87,7 @@ SVM                | 0.845228 | 0.703822 |  0.717532 | 0.891228
 DecisionTree-6    |  0.815993 | 0.618090 | 0.798701 | 0.822222
 KNN-15          |    0.784179 | 0.566434 | 0.788961 | 0.782456
 
+
+
+The jupyter file is:
+https://github.com/sgirem463/ML-AI-Comparing-Classifiers/blob/main/prompt_III.ipynb
