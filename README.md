@@ -88,6 +88,10 @@ DecisionTree-6    |  0.815993 | 0.618090 | 0.798701 | 0.822222
 KNN-15          |    0.784179 | 0.566434 | 0.788961 | 0.782456
 
 
+## Next Steps
+
+1. Explore further on feature engineering, can try polynomial features on columns with numerical values, while are age, duration, campaign, pdays and previous. However the best result may not come from typical polynomial processing with degree of 2 or 3, degrees like 1/2 (square root) 1/3 or 3/2 may work better. Or maybe logarithm of some features, the possibility is endless. This can be quite time consuming given there don't seem to be library for degree of 1/2, 1/3 or 3/2.
+2. grid search on more parameters with finer granularity of each model
 
 The jupyter file is:
 https://github.com/sgirem463/ML-AI-Comparing-Classifiers/blob/main/prompt_III.ipynb
